@@ -1,0 +1,141 @@
+/*### Primary
+
+- Yellow: hsl(47, 88%, 63%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 50%)
+- Black: hsl(0, 0%, 7%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
+- Weights: 500, 800*/
+
+* {
+  box-sizing: content-box;
+}
+@font-face {
+  font-family: figtree;
+  src: url("assets/fonts/Figtree-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: figtreeno;
+  src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+body {
+  background: hsl(47, 88%, 63%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1444px;
+  min-width: 375px;
+}
+
+:root {
+  --yellow--: hsl(47, 88%, 63%);
+  --white--: hsl(0, 0%, 100%);
+  --grey--: hsl(0, 0%, 50%);
+  --black--: hsl(0, 0%, 7%);
+  --fontsze--: 16px;
+  --fontfamily: "Frigtree";
+  --fontweightsmall--: 500;
+  --fontweightbig: 800;
+}
+
+.wholebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 300px;
+  height: 500px;
+  margin-top: 50px;
+  background-color: var(--white--);
+  border: 2px solid black;
+  box-shadow: 15px 15px;
+  border-radius: 30px;
+  font-family: "figtree";
+}
+.whole {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 260px;
+  border: 0px solid;
+  border-radius: 15px;
+}
+.learn {
+  background-color: var(--yellow--);
+  width: 82px;
+  line-height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-left: 20px;
+  font-family: "figtree";
+}
+.l2023 {
+  display: flex;
+  margin-left: 20px;
+  font-family: "figtreeno";
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: baseline;
+  font-size: large;
+  margin-left: 20px;
+  font-family: "figtreeno";
+}
+.top:hover {
+  color: var(--yellow--);
+  cursor: pointer;
+  transition: ease-in 120ms;
+}
+.info {
+  width: 250px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0px 0px 0px 20px;
+  font-family: "figtree";
+  color: var(--grey--);
+}
+footer {
+  margin-top: 20px;
+  text-align: start;
+  font-weight: var(--fontweightbig);
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.footimg {
+  width: 30px;
+  border-radius: 10px;
+}
+span {
+  padding-left: 10px;
+  font-family: "figtreeno";
+  font-weight: 400;
+}
+.attribution {
+  font-size: 8.5px;
+  text-align: start;
+  margin-left: 25px;
+  padding-top: 20px;
+  font-family: "figtreeno";
+}
